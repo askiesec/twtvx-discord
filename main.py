@@ -21,4 +21,4 @@ async def on_message(message):
         await asyncio.sleep(1)
         await message.channel.send(urllib.parse.urlunparse(newuri))
         
-client.run('MTE3Mjk3ODUzMjE1NTE1MDQzNw.GXEcIF.aAKiP3uFYdZCGikf6TnBH7Fjc463mmY6PgDO98')
+client.run('')
