@@ -15,7 +15,6 @@ async def on_ready():
 async def on_message(message):
     if 'https://twitter.com/' in message.content:
         message.delete()
-        vxuri = "vx"
         newuri = urllib.parse.urlparse(message.content)._replace(netloc="vxtwitter.com")
         # replaced = newuri._replace(netloc="vxtwitter")
         await asyncio.sleep(1)
