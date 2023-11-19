@@ -13,10 +13,8 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if 'https://twitter.com/' in message.content:
-        message.delete()
+    if "https://twitter.com/" in message.content:
         newuri = urllib.parse.urlparse(message.content)._replace(netloc="vxtwitter.com")
-        await asyncio.sleep(1)
-        await message.channel.send(urllib.parse.urlunparse(newuri))
+        await message.reply(urllib.parse.urlunparse(newuri))
         
-client.run('')
+client.run("")
