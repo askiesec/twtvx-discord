@@ -1,5 +1,4 @@
 import discord
-import asyncio
 import urllib.parse
 
 intents = discord.Intents.default()
